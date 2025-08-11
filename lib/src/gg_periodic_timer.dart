@@ -73,9 +73,7 @@ class GgPeriodicTimer {
 /// A periodic timer that can be started, stopped and started again
 class GgAutoPeriodicTimer extends GgPeriodicTimer {
   /// Constructor
-  GgAutoPeriodicTimer({
-    required this.interval,
-  });
+  GgAutoPeriodicTimer({required this.interval});
 
   /// The interval the timer fires
   final Duration interval;

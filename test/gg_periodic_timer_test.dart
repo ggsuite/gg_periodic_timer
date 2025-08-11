@@ -20,9 +20,7 @@ void main() {
     fake = fk;
     counter = 0;
 
-    periodicTimer = GgAutoPeriodicTimer(
-      interval: frameDuration,
-    );
+    periodicTimer = GgAutoPeriodicTimer(interval: frameDuration);
     periodicTimer.addListener(() => counter++);
     fake.flushMicrotasks();
   }
@@ -105,9 +103,7 @@ void main() {
       var counter = 0;
       var expectedCounter = 0;
       final timer = GgPeriodicTimer();
-      timer.addListener(
-        () => counter++,
-      );
+      timer.addListener(() => counter++);
 
       // Call fire -> onTimerFired will not be called because timer is not
       // started.

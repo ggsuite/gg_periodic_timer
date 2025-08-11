@@ -30,9 +30,7 @@ void main() async {
   /// Create a periodic timer is called automatically
   const oneFrame = Duration(milliseconds: 100);
   final autoTimer = GgAutoPeriodicTimer(interval: oneFrame);
-  autoTimer.addListener(
-    () => print('Auto timer fired.'),
-  );
+  autoTimer.addListener(() => print('Auto timer fired.'));
 
   /// Start the timer
   autoTimer.start();
