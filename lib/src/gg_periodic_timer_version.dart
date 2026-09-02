@@ -9,4 +9,4 @@
 // coverage:ignore-file
 
 /// The version of the `gg_periodic_timer` package.
-const String ggPeriodicTimerVersion = '1.1.0';
+const String ggPeriodicTimerVersion = '1.2.0';
